@@ -12,7 +12,7 @@
       "footer" ;
 }
 main > * {
-   background-color: goldenrod;
+   background-color: rgb(99, 141, 218);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -54,7 +54,7 @@ aside {
 .capa.editador{
    grid-template-rows: 0px;
    padding: 10px;
-   border:1px solid #26a;
+   border:1px solid rgb(152, 190, 229);
    margin: 3px; 
    background-color: #fff;
    
