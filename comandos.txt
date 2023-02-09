@@ -15,7 +15,7 @@ git status
 
 <<<<<<< HEAD
 5. (git branch) consultar las ramas del repositorio
-   (git branch nombre de rama) movernos entre las ramas
+   (git branch nombre de rama) crea rama
    ( git branch -D  nombre de rama a borrar) borra una rama
    ( git branch -l)
 =======
@@ -23,7 +23,7 @@ git status
 >>>>>>> rama-nueva
 
 6. (git checkout nombre de rama) cambia de rama
-git add .
+
 
 7. (git log )
    (git log --oneline)
