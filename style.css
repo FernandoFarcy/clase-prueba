@@ -1,0 +1,111 @@
+ main {
+   display: grid;
+   font-family: sans-serif;
+   height: 100vh;
+   grid-gap: 10px;
+   
+   /* especificar posicion de las areas */
+   grid-template-areas:
+      "header"
+      "contenido"
+      "izquierda"
+      "footer" ;
+}
+main > * {
+   background-color: goldenrod;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+
+/* Responsive */
+@media (min-width: 600px) {
+    main {
+         grid-template-areas: 
+            "header header "
+            "izquierda contenido"
+            "footer footer";
+            grid-template-columns: 5fr 3fr ;
+            grid-template-rows: 1fr 5fr .5fr;
+    }
+}
+
+/* nombrar las areas */
+header {
+   grid-area: header;
+}
+
+aside {
+   overflow-y: scroll;
+   scroll-behavior:smooth;
+   scroll-margin-top:inherit;
+   overflow-x: scroll;
+   scroll-margin-bottom:inherit ;
+   grid-area: izquierda;
+   color: rgb(161, 16, 23);
+   background-color: goldenrod;
+}
+
+
+.capa {
+   grid-area: contenido;
+}
+
+.capa.editador{
+   grid-template-rows: 0px;
+   padding: 10px;
+   border:1px solid #26a;
+   margin: 3px; 
+   background-color: #fff;
+   
+}
+
+
+
+footer {
+   grid-area: footer;
+}
+
+/*********************************/
+/* desde aca se muestra el array */
+
+
+
+
+.grid-container {
+   font-size: 14px;
+   margin-top: 5px;
+   padding-top: 5px;
+   display:grid; 
+   grid-template-rows: 50px; 
+   grid-template-columns: repeat(8,minmax(min-content,max-content));
+} 
+.grid-container .grid-item {
+   grid-template-rows: 0px;
+   padding: 10px;
+   border:1px solid rgb(230, 222, 223);
+   margin: 3px; 
+   background-color: #e41545;
+   
+}
+
+
+
+
+
+.boton-confirmar {
+   padding: 9px 40px;
+   /* background: #48e;*/
+   /* color: #fff; */
+  /* border: none; */
+   margin-top: 350px;
+ 
+
+}
+/* ********************************************************* */
+
+.titulo-git{
+   font-size: 2rem ;
+
+}
+

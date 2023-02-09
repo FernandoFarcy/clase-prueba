@@ -1,0 +1,31 @@
+Comandos:
+
+1. (git init), esto sirve para empezar a trabajar con GIT. solo se escribe la primera vez para activarlo.
+
+2. (git status), con esto chequeamos el estado de nuestro repositorio. ( working directory)
+git status
+3. (git add + nombre del archivo), con esto adherimos el archivo para luego subirlo al repositorio.
+   (git add .), con esto adherimos todos los archivos para luego subirlo al repositorio.
+
+4. (git commit -m "comentario de que se trata este commit" ) ,una vez que nuestros archivos
+   estan en el Starging Areagit debemos pasarlo a nuestro repositorio local y para eso debemos
+   usar el git commit, que es el comando que nos va a permitir comprometer nuestros archivos.
+   Para confirmar los cambios realizados y siempre debe llevar un mensaje lo mas descriptivo 
+   posible.
+
+<<<<<<< HEAD
+5. (git branch) consultar las ramas del repositorio
+   (git branch nombre de rama) movernos entre las ramas
+   ( git branch -D  nombre de rama a borrar) borra una rama
+   ( git branch -l)
+=======
+5. (git branch) 
+>>>>>>> rama-nueva
+
+6. (git checkout nombre de rama) cambia de rama
+git add .
+
+7. (git log )
+   (git log --oneline)
+
+8. gitignore 
